@@ -1,233 +1,413 @@
 
- <!DOCTYPE HTML>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   
-    <title>dmjstudy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-    
-    <meta name="author" content="敏杰">
-    
-    
-    
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/pacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
-    
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <title>dmjstudy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="dmjstudy">
+<meta property="og:url" content="http://blog.mjie.info/index.html">
+<meta property="og:site_name" content="dmjstudy">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="dmjstudy">
+<meta name="twitter:description">
+  
+    <link rel="alternative" href="/atom.xml" title="dmjstudy" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
 </head>
-
-  <body>
-    <header>
-      <div>
-		
-			<div id="imglogo">
-				<a href="/"><img src="/img/logo.svg" alt="dmjstudy" title="dmjstudy"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="dmjstudy">dmjstudy</a></h1>
-				<h2 class="blog-motto">Just do it</h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					
-						<li><a href="/">Home</a></li>
-					
-						<li><a href="/archives">Archives</a></li>
-					
-					<li>
-					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
-						<input type="hidden" name="q" value="site:blog.mjie.info">
-					</form>
-					
-					</li>
-				</ul>
-			</nav>			
-</div>
-
-    </header>
-    <div id="container">
-      <div id="main">
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2015/10/20/hello-world/" title="Hello World" itemprop="url">
-  
-    <h1 itemprop="name">Hello World</h1>
-    
-     
-           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
-        
-    
-    <time datetime="2015-10-20T00:34:53.557Z" itemprop="datePublished">2015-10-20</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2015/10/19/3721Just-do-it-致未来的自己/" title="3721Just do it 致未来的自己" itemprop="url">
-  
-    <h1 itemprop="name">3721Just do it 致未来的自己</h1>
-    
-     
-           <p itemprop="description" >2015.10.19用markdown编排的试一下2015.09.25 编辑了一下格式，不能让自己以后不想看吧！算了不支持html52015年9月23日 23:01:16 修改昨天晚上十二点多才回顾,想到3721,一看佳琪截止日志是周三12点,后悔的以为时间已经过了.十二点半时写</p>
-        
-    
-    <time datetime="2015-10-19T12:22:03.000Z" itemprop="datePublished">2015-10-19</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2015/10/19/makedown语法/" title="makedown语法" itemprop="url">
-  
-    <h1 itemprop="name">makedown语法</h1>
-    
-     
-           <p itemprop="description" >最高阶标题 第二阶标题#标题1
-##标题2
-###标题3
-这是 H6
-区块引用
-
-嵌套引用
-
-第一行列表项
-第二行列表项
-
-
-
-
-无序列表可用星号、加号或减号
-
-
-星号后用
-
-
-加号
-
-
-减号
-
-
-有序是
-第二个
-第三个
-
-3.第三个1.第一个
-
-
-分隔线
-链接处理个人博客链接</p>
-        
-    
-    <time datetime="2015-10-19T09:50:16.000Z" itemprop="datePublished">2015-10-19</time>
-  </a>
-</section>
-
-
-</div>
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
-<aside class="clearfix">
-
-  
-
-  
-
-  <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-</aside>
-</div>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">dmjstudy</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Just do it</a>
+        </h2>
+      
     </div>
-    <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<div class="social-font clearfix">
-		
-		
-		
-		
-		
-	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2015 
-		
-		<a href="http://blog.mjie.info" target="_blank" title="敏杰">敏杰</a>
-		
-		</p>
-</div>
-</footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-    }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
-});
-</script>
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.mjie.info">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main">
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/20/hello-world/" class="article-date">
+  <time datetime="2015-10-20T00:34:53.557Z" itemprop="datePublished">2015-10-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/20/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://blog.mjie.info/2015/10/20/hello-world/" data-id="cifzzuzgo0002lwgyeyz9jwp7" class="article-share-link" data-share="baidu">分享到</a>
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-3721Just-do-it-致未来的自己" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/19/3721Just-do-it-致未来的自己/" class="article-date">
+  <time datetime="2015-10-19T12:22:03.000Z" itemprop="datePublished">2015-10-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/19/3721Just-do-it-致未来的自己/">3721Just do it 致未来的自己</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>2015.10.19用markdown编排的试一下<br>2015.09.25 编辑了一下格式，不能让自己以后不想看吧！算了不支持html5<br>2015年9月23日 23:01:16 修改昨天晚上十二点多才回顾,想到3721,一看佳琪截止日志是周三12点,后悔的以为时间已经过了.十二点半时写了</p>
+<blockquote>
+<p>“看样子,事务收集还是很成问题,时间错了,明天(今天)白天再写.先占个位,再不睡,就不能指望自然醒了.”</p>
+</blockquote>
+<p>然后就去睡了,在床上睡不着,想自己事务收集很成问题,自己又害了同伙.自责的睡不着,想了想手机还在别人手上,再不睡明天就不能自然醒了.想到自己的手机还没有拿到就感觉不对,怎么日子过的这快.醒来就是周四不又要放假了,我等手机也还等多久,才发现周三还没有过.然后开心的睡了.<br>居然能写了三四个小时.</p>
+</blockquote>
+<hr>
+<h1 id="Just_Do_It致未来的自己">Just Do It致未来的自己</h1><h1 id="1-参加之前">1.参加之前</h1><h2 id="1-1重头再来">1.1重头再来</h2><p>在2012年下半年在战拖学园和一群人天天刷番茄，那一段时间学到了很多东西。也从零散中看了不少东西，看到什么就跟着试试，包括那个四点起床，结果被骂了一顿后就放弃了。从记录看到了十一月我就开始放弃了。每次看到群里的热闹，感觉自己已经像逃兵一样放弃了他们，再加入也不好意思。中途也试着想再加入，没有一周的时候，因各种原因放弃（现在看来如果我多坚持一下，不太在意亲友的想法，也不至于这样被动。当然半途而废一直以来是我最大的问题）。作为逃兵我，都不敢面对之前的战友。三年间除了看看李公子的学习力外，基本都没有怎么过多关注个人管理。8月17日老琼在拖学园番茄土豆群中说要再次来战拖，看到之前失败战友都能勇敢去面对过去，再次站起来，为什么我不能呢?于是准备开始番茄工作法学习打卡,一切头重再来。<br>就在那几天，开始再次关注幸福进化群，记得之前还是零言向我推荐村长的博客和群。现在想想总会有点辜负了她的信任。在一天看在群里看到一个人问excel日期分组的问题，看着没有人回说，我就帮忙了，在不清楚那人具体想干什么时候的情况下，我帮了一下倒忙。加上当时网卡，基本不能远程，我就给那人录制了几个gif图片演示。达到那人效果时，他说怎么和剑飞的那个怎么不样…给文档…再折腾…折腾了几个来回才帮助搞好。如果是个会Excel的人肯定会说我浪费时间了,好在他不会excel…..机缘巧合，交流之后他告诉我他参加过3721，鼓励我参与，也许算是回报，他还热情说把3721的pass卡给我,让我直接去参加。我看看第7期还有一段时间，就说我先看看能不能报上。结果，在我以为报不上的时候，居然收到了短信。</p>
+<h2 id="1-2后起之秀">1.2后起之秀</h2><p>就像夏花问我知不知道吸引力法则时,我当时就明白她想说什么。也许是那个吸引力，也许是我运气好。在那几天宠辱不惊通过群问我一个问题。在交流，我发现她身上充满激情，虽然在个人成长方面知道的不多，但她无意中说到：她想看看她坚持学习五年后的自己是什么样子的。三年前我也像她一样，渴望学习，也希望看看几年后的自己，可惜半途而废了几年后的自己让自己很难堪。她无意间的一句话把我自己心里那一种沉睡中的渴望点起来。刚好通过这一次3721，我可以认识一些一起成长的人，可以相互学习一下也让自己不要放弃，学会每天计划与回顾。</p>
+<h1 id="2-初印象">2.初印象</h1><h2 id="2-1简单又有难度">2.1简单又有难度</h2><p>在接到邮件时看要求时的第一映象是简单而又有压力：</p>
+<blockquote>
+<p>简单在于就三件事，没有什么要求，要求主要是打卡时间。<br>压力方面：</p>
+<blockquote>
+<ul>
+<li>一方面是每天早上8：00前打卡。这个要是周一和周末有点麻烦，周一基本上5点半就起了，洗漱完就出门坐车去了。到公司都过了8点。周末不太不确定，平时都是自然醒的。有事就早点，没事就迟一些。</li>
+<li>二是动不动的就是红包。对于几乎不用微信的我生怕不小心点错了什么。</li>
+<li>三是组队后的同组的压力，同伴都很优秀，自己都不好意思放弃。</li>
+</ul>
+</blockquote>
+</blockquote>
+<h2 id="2-2_第一次畅聊">2.2 第一次畅聊</h2><p>在第一次畅聊中，我发现伙伴们都很优秀，来迟的我差点以为没有人要了，感觉@阿甲还是挺淡定的。<br>通过第一次的了解，发现有不少人都是之前参加过的，大家来自不同的地方和专业方向，但都是一样的追求和渴望成长。<br>交流中印象最深的是马博士说的<strong>“一件事情，你对它有多大的期待，就要投入多少的时间和精力，只有高投入才会达成你的期待~”</strong>，<br>然后就是蒋金涛说的3个目标：<br><strong> 1.努力规范自己养成一个好的生活工作习惯 早睡早起 按时吃饭 身体健康；<br>2.每天努力完成计划 每天能感到充实 成长 快乐；<br>3.认识更多优秀的朋友影响自己变成更好的自己。 </strong></p>
+<h1 id="3-收获">3.收获</h1><h2 id="3-1学到不少东西">3.1学到不少东西</h2><p>看着别人打卡的信息中，无意中可以学到很多东西。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   不记得是谁提到了panda的自我管理，通过查找看到真人图书馆，发现里面有不少干货。</span><br><span class="line">FFC日记：当时我查了一下FFC没有查找什么出来。当天问一下@黄秋洁，当时比较晚了，回复就三个单词Feeling、Fact、Compare。感觉是云里雾里，当天晚我把自己的回顾发给了别人，第二天别人又问到这个FFC是什么，我就又开始查。总算是找到@喵喵吴的博客和她写的内容，才明白。一天还告诉一个人FFC，让他在挫折中找自己的优点，让他快速摆拖了郁闷。</span><br><span class="line">好书，好像每天打卡时就会发现很多人看不同的书。无意中看到村长博客中的书单，就一次通过豆瓣找加ISBN号然后批量加到calibre中，之后和一个同事商量分工找到了九十几本电子书，好在大部分的书都有epub或mobi的格式，每天路上还可以听听。</span><br><span class="line">村长博客：到现在我还感觉马博士总是说先去看看村长博客。虽然之前<span class="number">13</span>年在零言的建议下订阅了村长博客的RSS，但没有仔细看。而且自己消化方面问题很大。这次每天用为知笔记收集一点，居然还做成了一本电子书。</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-2关于回忆">3.2关于回忆</h2><p>口号:当时组队后说口号时，我无意中想到当时高考时班里每天去跑步时的口号“逆风飞扬,永不止步”，每次回想，会让自己有种兴奋的感觉。所幸大家也采纳了。To be no.1当时和队友说是刘德华唱的残奥会的歌，结果当晚去找了找没有找到，才发现名字记错了那歌是《Everyone is NO.1》，记得当时看这个MV时，感触很深，总之无论怎样都不要放弃。<br>关于扇贝：在采集村长博客时，看到村长也提到了Chain，想想估计当时我们是一个时期看到扇贝周刊采访Chain的文章。12年看到Chain介绍的我当时正在天天战拖，当时就各种跟。四点起床是第一次在他这里听到的，之后还看到还有一本《四点起床》的书，结果在我折腾一二周被骂了一顿就放弃。在看到文章后，我们都在学，可惜扇贝一两个月后，我随着停止了战拖，扇贝也跟着放弃了。如果三年我也像村长这样学，我现在会不会感谢自己，而不是自己自责。三年的教训后的总结是：半途而废是最浪费时间的！也许像笑来老师说的那个，有些事说给经历过的人，才更有感受（他是说书准备写给学生看的，结果是工作过的人看的更多）。<br>关于一万小时：在再次听到这本书时，第一反应就是想到@ Hamlet当时组织的一万小时的活动，可惜当时没有参加。天天看到他那样坚持，感觉很内疚的。我什么时候才能开始自己的一万小时的精深练习呢？</p>
+<h2 id="3-3从失败中看到自己的成长">3.3从失败中看到自己的成长</h2><p>“今天早6点半本来应该去跑步,忙完日志和计划后都40了.平时跑步洗澡洗衣就要近1小时,感觉今天很赶,想用这时间来看书做一下笔记走路听更好一点.中途强制休息时开始看手机资讯起来.然后就到了快上班时,结果没有跑步也没怎么学习,就感觉很失落.好在上班路上听书,感觉就好了,造成这种失落的关键问题在哪?”当时这个问题感谢朋友们给我了很多建议。其中一个朋友对我说，你的晨间日记还没有断，我突然发现还真是那么一回事。<br>虽然现在问题还有很多，但一些事还在坚持着好，如果没有时间做就少做一点。有些习惯一断就很难再起来。突然想到索隆回鹰眼“你为什么不躲？”，索隆说：“我不知道……我自己也不知道啊。我只是觉得如果在这儿退缩了，过去那些重要的誓言，约定全都会消失不见。而我再也回不到这里。”可惜我不做到。越写越像给未来放弃的自己看的，如果你看到，希望你不要想太多，重新站起来！现在的我给你一点积极的回忆。未来还是要靠你来走。</p>
+<h1 id="4-21天中的思考">4.21天中的思考</h1><h2 id="4-1_三件事写什么?">4.1 三件事写什么?</h2><p>到现在为止我也还没有想清楚这个问题？懵懵懂懂的感觉要看你自己的目的和场景。这个问题没有所谓的对与错，只有合不合适。<br>经验</p>
+<blockquote>
+<ol>
+<li>青蛙模式：第一次畅聊时@雷慧洁(甜甜)说的：“三件事的选择是有一定依据地，就是一天最重要的事，是那种你不做有可能就会死的事情！“感觉对现在的我感觉很重要，我现在经常不能做到要事第一。</li>
+<li>培养型：这是一次夏花对我说，三件事是两件最大青蛙，一件是与成长相关的。她的想法是怕自己忘记了成长。</li>
+<li>轻松模式：三件小事开始，培养习惯开始做法。</li>
+<li>乱七八槽：估计我算是这一种吧，感觉我很乱,按自己的想法瞎改。不过这样应该会更加有趣一点。<blockquote>
+<p>战拖和3721的重叠，因为每天都要把计划和回顾发给别人，还要加入到doit.im。开始只是想加个标签（看到剑飞时间统计里面的提到），我的excel表是为了战拖番茄记录与回顾用的。为了让excel合成一个格式,给3721和doit用。开始想最重要三件事，像夏花那样。但每次排序感觉很纠结，为了简单，直接按我的时间来，前三件事就成三件事，一般都是早上做的三件。最近感觉自己的不能做到要事第一。需要每天先分配最重要的事，然后再按时间来排序。前天早上打坚持卡时，发现之前只做了21天的格式。就干脆直接在excel中合成一个3721的格式,之后早上就可以不用列格式让excel自动生成。今天早上无意看到excel的表格复制到微信中直接是图片。以后就是直接发图，格式问题就不再用考虑算了。回顾也一样可以生成一个,并列看结果和思考也不错,反正没有人在意我的格式。</p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<h2 id="4-2_讨论组">4.2 讨论组</h2><p>中途我建立了一个QQ讨论组，可惜没有加全所有人。没有时间写了，简单列一下自己的想法：关键不能插图，不能直接用截图显示。<br>最初原因：</p>
+<blockquote>
+<p>1.个人感觉微信交流不方便<br>2.有困惑时交流请教一下<br>3可惜,不想参加完后因没有交流而一群一起成长的人散了。</p>
+</blockquote>
+<p>进一步的想法：</p>
+<blockquote>
+<p>1.交流自己已知的，给不知道的人一个启迪<br>2.分主题分组一起学习村长的博客（可惜没有组织，反正后期不知道参加什么活动，就像马博士说的先消化村长的博客，想用为知笔记群组分享笔记。看到过组织之前有“扒狼皮”活动，用思维导图消化村长博客，我也可以试试。反正有一个人参加就赚一个呗！关键是自己能成长。最近两天整理个人系统和为知笔记，感觉想明白一些细节问题。感觉李公子的文档和村长博客可以互补）</p>
+</blockquote>
+<h1 id="5-建议">5.建议</h1><h2 id="5-1下一步的成长">5.1下一步的成长</h2><p>马琦博士建议</p>
+<blockquote>
+<p>1.进行其它活动</p>
+<blockquote>
+<p>1.行动管理的精深训练是《掌控每一天》活动，网站 me.runwith.cc；<br>2.目标管理的活动：年计划高度的《向组织揩油》，周计划和月计划的活动易仁永澄老师最近正在开展的《百步穿杨》；<br>3.能力提升的活动《我一定能》，目前正在进行内测的第4期。</p>
+</blockquote>
+<p>2.消化村长博客形成自己的系统<br>3.参加下期或坚持打卡群</p>
+</blockquote>
+<h2 id="5-2对活动的建议">5.2对活动的建议</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">早上打卡时间不能在四点前，自己一次过了十二点的卡，总感觉在作弊。觉得不能这样鼓励晚睡。</span><br><span class="line">发布突袭活动时,能否说明一下这个活动是必须的做的事情,最好有时间要求和后果情况说明,有个心理和时间安排准备.</span><br><span class="line">可以话,进行过程中放一两个主题引导大家进行之后的学习.个人感觉活动结束完了就不知道下一步怎么走了.感觉这个活动,明明只是一个开始.但又像刚上完小学就要自己去探索.感觉适当的引导可以持续发展的更好.</span><br><span class="line">交流前可以适当给大家准备一点资料,如提问题等引导可以进行更深层次的讨论.</span><br></pre></td></tr></table></figure>
+<h1 id="6-感谢">6.感谢</h1><p>最后感谢组织者让我们一群在一起成长，现实中真心很难遇到这样伙伴。感谢一组伙伴的信任，感觉对不起你们，不然我们组就可以满分了。感谢一起成长在伙伴，感谢你们的建议和鼓励，谢谢！<br>如果看到这篇文章的你还没有参加过这个活动，可以考虑参加一下，就像姚佳琪的说的:“小小三件事，胜过一万次空想”。今天我被骂“垃圾一个”，我回两句“垃圾也能发电造福人类呀，还有人捡垃圾发财呢”。她笑了。呵呵！坚持做一下，相信垃圾会有一天变废为贵。<br>未来的我如果看到这篇文章，希望对你有帮助。最好没有，那我会睡着也笑的，希望你能珍惜这次的伙伴!如果哪天我放弃了,也请你们帮且提醒一下我!谢谢</p>
+<hr>
+<p><strong> 坚持下去,JUST DO IT </strong><br>致未来的自己</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://blog.mjie.info/2015/10/19/3721Just-do-it-致未来的自己/" data-id="cifzzuzfb0000lwgydund84tg" class="article-share-link" data-share="baidu">分享到</a>
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-makedown语法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/19/makedown语法/" class="article-date">
+  <time datetime="2015-10-19T09:50:16.000Z" itemprop="datePublished">2015-10-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/19/makedown语法/">makedown语法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="最高阶标题">最高阶标题 </h1><h2 id="第二阶标题">第二阶标题</h2><p>#标题1</p>
+<p>##标题2</p>
+<p>###标题3</p>
+<h6 id="这是_H6">这是 H6</h6><blockquote>
+<p>区块引用</p>
+<blockquote>
+<p>嵌套引用</p>
+<ol>
+<li>第一行列表项</li>
+<li>第二行列表项</li>
+</ol>
+</blockquote>
+</blockquote>
+<ul>
+<li>无序列表可用星号、加号或减号</li>
+</ul>
+<blockquote>
+<p>星号后用</p>
+</blockquote>
+<ul>
+<li>加号</li>
+</ul>
+<ul>
+<li>减号</li>
+</ul>
+<ol>
+<li>有序是</li>
+<li>第二个</li>
+<li>第三个</li>
+</ol>
+<p>3.第三个<br>1.第一个</p>
+<hr>
+<hr>
+<p>分隔线</p>
+<p>链接处理<br><a href="http://blog.mjie.info">个人博客链接</a></p>
+<p><img src="/path/to/img.jpg" alt="alt text" title="Title"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://blog.mjie.info/2015/10/19/makedown语法/" data-id="cifzzuzgj0001lwgyqxdoyzcx" class="article-share-link" data-share="baidu">分享到</a>
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  
+    
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/10/20/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2015/10/19/3721Just-do-it-致未来的自己/">3721Just do it 致未来的自己</a>
+          </li>
+        
+          <li>
+            <a href="/2015/10/19/makedown语法/">makedown语法</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">友情链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://xiguabaobao.com" target="_blank">主题作者</a>
+          </li>
+        
+          <li>
+            <a href="http://reqianduan.com" target="_blank">热前端</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 敏杰<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>window._bd_share_config={"common":{},"share":{"bdCustomStyle":"/css/bdshare.css"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
 
 
+<script src="/js/script.js" type="text/javascript"></script>
 
-
-
-  </body>
- </html>
+</div>
+</body>
+</html>
