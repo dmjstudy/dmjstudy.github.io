@@ -94,15 +94,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="通过_Github_的操作来说明工作区、暂存区、版本库之间的关系">通过 Github 的操作来说明工作区、暂存区、版本库之间的关系</h1><h1 id="git工作流的三个位置">git工作流的三个位置</h1><p>工作目录,暂存区(Index),版本库(HEAD)三者关系如图:<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/3955717.jpg" alt=""></p>
-<h2 id="在git命令的操作">在git命令的操作</h2><ol>
-<li>创建一个文件夹后,在文件夹中git init,此目录为工作区.或直接git clone 一个项目,项目的目录为工作区</li>
-<li>在文件修改变动后git add 即把变动文件转到到暂存区</li>
-<li>最后git commit后即提交到了版本库</li>
+        <h1 id="通过_Github_的操作来说明工作区、暂存区、版本库之间的关系">通过 Github 的操作来说明工作区、暂存区、版本库之间的关系</h1><h1 id="1-_git工作流三者关系">1. git工作流三者关系</h1><p>工作目录,暂存区(Index),版本库(HEAD)三者关系如图:<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/3955717.jpg" alt=""></p>
+<h1 id="2-在git命令行下的操作">2.在git命令行下的操作</h1><ol>
+<li>创建一个文件夹后,在文件夹中<code>git init</code>,此目录为工作区.或直接git clone 一个项目,项目的目录为工作区</li>
+<li>在文件修改变动后<code>git add</code>即把变动文件转到到暂存区</li>
+<li>最后<code>git commit</code>后即提交到了版本库</li>
 </ol>
-<h2 id="在git_hub上的操作">在git hub上的操作</h2><ol>
-<li>点左上角上+后如图所示,增加相应git工作区.<br>Add 为添加本地已经存在的文件夹,选中相应的文件夹后,Add repository即可<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/75470112.jpg" alt=""><br>Create 为本地的文件夹创建新的git工作区.<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/75971514.jpg" alt=""><br>Clone主要是将自己github上的项目下载下来.<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/7691665.jpg" alt=""></li>
-<li>新建git本地工作区后,到相应的文件夹下修改文件.如创建一个readme.txt的文件.github客户端自动会识别已经修改的内容,并自己勾选增加到暂存区(git add),如不加入可以不勾选.下面commit即为git commit的操作.<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/64614429.jpg" alt=""><br>github客户端将两个操作合并成一个界面.<br>在提交前前后用git for windows的git bash查看状态如下图:<br>提交前提示需要git add,提交后直接就完成提交.相当一次完成两个操作.<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/91302463.jpg" alt=""></li>
+<h1 id="3-_在git_hub上的操作">3. 在git hub上的操作</h1><h2 id="3-1添加到工作区">3.1添加到工作区</h2><ol>
+<li>点左上角上+后如图所示,增加相应git工作区.<br>Add 为添加本地已经存在的文件夹,选中相应的文件夹后,Add repository即可<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/75470112.jpg" alt=""><br>Create 为本地的文件夹创建新的git工作区.<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/75971514.jpg" alt=""><br>Clone主要是将自己github上的项目下载下来.<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/7691665.jpg" alt=""><h2 id="3-2添加到暂存区和版本库">3.2添加到暂存区和版本库</h2></li>
+<li>新建git本地工作区后,到相应的文件夹下修改文件.如创建一个readme.txt的文件.github客户端自动会识别已经修改的内容,并自己勾选增加到暂存区(git add),如不加入可以不勾选.下面commit即为git commit的操作.<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/64614429.jpg" alt=""><h2 id="3-3github客户端将两个操作合并成一个界面-">3.3github客户端将两个操作合并成一个界面.</h2>在提交前前后用git for windows的git bash查看状态<code>git status</code>如下图:<br>提交前提示需要git add,提交后直接就完成提交.相当一次完成两个操作.<br><img src="http://7xntr6.com1.z0.glb.clouddn.com/16-6-8/91302463.jpg" alt=""></li>
 </ol>
 
       
